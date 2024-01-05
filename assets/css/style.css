@@ -1,0 +1,595 @@
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+}
+
+a,
+button,
+input,
+textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: inherit;
+    opacity: 0.7;
+}
+
+a {
+    display: inline-block;
+}
+
+a:hover {
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: block;
+    width: max-content;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts =======================================*/
+
+@font-face {
+    font-family: 'Casper';
+    font-weight: 400;
+    src:
+        url('../fonts/Casper.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/Casper.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Casper';
+    font-weight: 700;
+    src:
+        url('../fonts/CasperBold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/CasperBold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'FoglihtenNo06';
+    font-weight: 400;
+    src:
+        url('../fonts/FoglihtenNo06_076.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/FoglihtenNo06_076.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/FoglihtenNo06_076.otf') format('opentype'),
+}
+
+/* Root ======================================= */
+
+:root {
+    --section: clamp(70px, 10vw, 120px);
+    --section-box: clamp(50px, 10vw, 100px);
+    --white: #fff;
+    --accent: #FF9533;
+    --black: #30343C;
+    --blue: #256AB5;
+    --red: #FF5C35;
+    --btn-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0.00) 50%), #FF8D24;
+    --btn-bg-h: linear-gradient(180deg, rgba(255, 255, 255, 0.21) 40%, rgba(255, 255, 255, 0.00) 100%), #FF8D24;
+}
+
+
+
+
+/* Global ====================================== */
+body {
+    font-family: 'Casper', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: var(--black);
+}
+
+h1,
+h2 {
+    font-family: 'FoglihtenNo06';
+
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: clamp(35px, 3.8vw, 65px);
+}
+
+p {
+    font-size: clamp(16px, 1.2vw, 20px);
+}
+
+.container {
+    max-width: 1700px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main-btn {
+    font-family: 'Casper', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 26px 58px;
+    background: var(--btn-bg);
+    color: var(--white);
+}
+
+.main-btn:hover {
+    background: var(--btn-bg-h);
+    color: var(--white);
+}
+
+
+.slider-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.slider-btns div {
+    cursor: pointer;
+}
+
+.half {
+    max-width: 50%;
+}
+
+/* Header ==========================================*/
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 17px 0;
+    font-family: 'Casper', sans-serif;
+    font-size: 16px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header__nav ul {
+    display: flex;
+    gap: 78px;
+}
+
+input[type=submit] {
+    display: inline-block;
+}
+
+/* Main ==========================================*/
+.main {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 190px 0 105px;
+}
+
+.main__wrapper {
+    display: flex;
+}
+
+.main__content {
+    width: 65%;
+}
+
+.main p {
+    line-height: 28px;
+    max-width: 652px;
+    margin: 26px 0 54px;
+}
+
+.main__count {
+    padding: 45px;
+    background: rgba(47, 64, 92, 0.35);
+    backdrop-filter: blur(35px);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 87px;
+}
+
+.main__count--item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main__count--title {
+    font-family: 'FoglihtenNo06';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 109.71%;
+    color: var(--accent);
+    text-wrap: nowrap;
+}
+
+.main__count--text {
+    max-width: 175px;
+}
+
+.main__video {
+    gap: 22px;
+    display: block;
+    height: max-content;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+.main__video p {
+    margin: 0;
+    max-width: 200px;
+}
+
+/* Welcome ====================================*/
+
+.welcome {
+    position: relative;
+    padding: var(--section) 0 111px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: rgba(132, 132, 132, 0.05);
+}
+
+.welcome p {
+    margin: 39px 0 69px;
+    max-width: 80%;
+}
+
+.welcome__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* How ====================================*/
+
+.how {
+    padding-top: var(--section);
+}
+
+.how h2 {
+    margin-bottom: 63px;
+}
+
+.how ul li {
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.how__num {
+    padding: 15px;
+    box-shadow: 0px 14px 65.3px -13px rgba(0, 0, 0, 0.10);
+    height: 100%;
+}
+
+.how__num--item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+
+}
+
+.how__num--count {
+    color: var(--blue);
+    font-family: 'FoglihtenNo06';
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 109.71%;
+    text-transform: uppercase;
+}
+
+.how__num--text {
+    max-width: 220px;
+}
+
+/* Reason ==================================*/
+
+.reason {
+    padding-top: var(--section);
+    padding-bottom: var(--section);
+}
+
+.reason p:nth-child(1) {
+    max-width: 633px;
+}
+
+.reason__wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+.reason__item {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    padding: 50px 30px 30px;
+    height: 100%;
+}
+
+.reason__item img {
+    margin-bottom: 30px;
+}
+
+.reason__item--title {
+    margin-bottom: 9px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Growth ==================================*/
+.growth {
+    color: var(--white);
+    padding: 20px;
+
+}
+
+.growth__box {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: var(--section-box) 0;
+}
+
+.growth h2 {
+    max-width: 45%;
+}
+
+.growth__item {
+    padding: 35px 45px 63px;
+    background-color: rgba(67, 64, 92, 0.35);
+    height: 100%;
+}
+
+.growth__item--title {
+    color: var(--accent);
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+
+/* Solution =================================*/
+
+.solution {
+    padding: var(--section) 0;
+    background-color: rgba(132, 132, 132, 0.05);
+}
+
+.solution p {
+    font-size: 24px;
+    margin-top: 22px;
+}
+
+.solution__item {
+    padding: 15px;
+    box-shadow: 0px 14px 65.3px -13px rgba(0, 0, 0, 0.10);
+    height: 100%;
+}
+
+.solution__item--box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 38px 25px 40px 40px;
+    height: 100%;
+
+}
+
+.solutin__item--title {
+    font-family: 'FoglihtenNo06';
+    font-size: 40px;
+    color: var(--accent);
+}
+
+.solutin__item--title span {
+    font-size: 80px;
+}
+
+.solutin__item--text {
+    line-height: 21.5px;
+}
+
+/* Clients =================================*/
+
+.clients {
+    padding-top: var(--section);
+}
+
+.clients__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* testimonial =========================================*/
+
+.testimonial {
+    padding-top: var(--section);
+}
+
+/* blog =========================================*/
+
+.blog {
+    padding-top: var(--section);
+    padding-bottom: var(--section);
+}
+
+/* feedback =========================================*/
+
+.feedback {
+    padding-top: var(--section);
+    padding-bottom: var(--section);
+    color: var(--white);
+}
+
+.feedback__wrapper {
+    background-image: url(../img/bg-feedback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.feedback__inner {
+    padding: 70px 60px;
+}
+
+.feedback__title p {
+    max-width: 506px;
+    margin-top: 40px;
+}
+
+.feedback span,
+.feedback input {
+    display: inline-block;
+    width: 100%;
+}
+
+.feedback input {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 50px;
+}
+
+.feedback span.half {
+    width: 48%;
+}
+
+.feedback span:nth-child(2) {
+    float: right;
+}
+
+.feedback span:nth-last-child(1) {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 50%;
+}
+
+.feedback__form form input[type=submit] {
+    width: max-content;
+    border-bottom: none;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+.feedback__form form p:nth-last-child(1){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* footer ============================*/
+.footer{
+    background-image: url(../img/bg-footer.jpg);
+    padding-top: 36px;
+    color: var(--white);
+}
+.footer__main{
+    padding: 36px 0 62px;
+
+}
+.footer__inner{
+    flex: 1 0;
+}
+.footer__menu ul{
+    columns: 2;
+    column-gap: 7vw;
+}
+
+.footer_logo p{
+    max-width: 280px;
+    font-size: 16px;
+    margin-top: 23px;
+    opacity: 0.7;
+}
+.footer__social ul{
+    display: flex;
+    gap: 15px;
+}
+.footer__address{
+    margin-left: 7vw;
+}
+.footer__address .main-btn{
+    margin-top: 33px;
+}
+
+.footer__copy{
+    padding: 26px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.footer__copy p,
+.footer__copy a{
+    text-decoration: underline;
+    margin: 0;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+
+
+* {
+    /* outline: 1px solid var(--black); */
+}
