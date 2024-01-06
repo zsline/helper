@@ -714,6 +714,9 @@ body.page .header {
 .service-main {
     padding: 35px 0 90px;
 }
+.service-main h2{
+    margin-bottom: 50px;
+}
 
 .service-work {
     padding: 90px 0 110px;
