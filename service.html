@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Услуги</title>
 </head>
-<body>
+<body class="page">
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="assets/img/logo.png" alt="logo">
                     </a>
                 </div>
                 <nav class="header__nav">
                     <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="service.html">Услуги</a></li>
                         <li><a href="#">Блог</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__address">
@@ -33,5 +33,95 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__wrapper">
+                    <div class="feedback__inner">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feedback__title">
+                                    <h2>Оставьте заявку, <br>мы вам <br>перезвоним!</h2>
+                                    <p>После отправки заполненной формы наш менеджер свяжется с вами в течении часа</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feedback__form">
+                                    <form action="">
+                                        <span class="half">
+                                            <input type="text" placeholder="Ваше имя">
+                                        </span>
+                                        <span class="half ">
+                                            <input type="text" placeholder="электронная почта">
+                                        </span><br>
+                                        <span>
+                                            <input type="text" placeholder="+7 000 000 000">
+                                        </span><br>
+                                        <span>
+                                            <input type="textarea" placeholder="Комментарий">
+                                        </span><br>
+                                        <p><input type="submit"  class="main-btn" value="Отправить">
+                                        <span>Нажимая кнопку «Отправить» вы принимаете политику конфендициальности и соглашаетесь с обработкой ваших персональных данных</span></p>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </main>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__main d-flex justify-content-end">
+                <div class="footer__inner d-flex justify-content-between">
+                    <div class="footer_logo">
+                        <a href="#"><img src="assets/img/logo.png" alt=""></a>
+                        <p>Проект «Система». Мы помогаем бизнесу перейти на новый уровень.
+                            Мы продаем не продукт, мы продаем развитие бизнеса!</p>
+                    </div>
+                        <div class="footer__menu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__social">
+                            <ul>
+                                <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+                                <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+                                <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="footer__address">
+                    <div class="footer__address--text">
+                        г. Алматы, ул. Байзакова 280, Smart Point
+                    </div>
+                    <div class="footer__address--mail">
+                        <a href="mailto:smart-sales.kz@mail.ru">smart-sales.kz@mail.ru</a>
+                    </div>
+                    <div class="footer__address--phone">
+                        <a href="tel:+77072590954">+7 707 259 0954</a>
+                    </div>
+                    <a href="#" class="main-btn">
+                        Обратный звонок
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <div class="container">
+                <div class="footer__copy--inner d-flex justify-content-between">
+                    <p>All rigts reserved © Busines Helper 2023</p>
+                    <a href="#">Политика конфендициальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
