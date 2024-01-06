@@ -702,6 +702,65 @@ body.page .header {
     flex: 1 1;
 }
 
+
+/* Блог =======================================
+    ==========================================*/
+
+/* blog =====================================*/
+
+.blog-main h2{
+    margin-top: 35px;
+}
+.blog-main__search{
+    margin-top: 50px;
+    max-width: 550px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.4);
+}
+.blog-main__search form{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.blog-main__search input{
+    width: 100%;
+}
+.blog-main__search input[type="submit"]{
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.blog-posts__wrapper{
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.blog-posts__item--title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0 9px;
+}
+.blog-posts__pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 70px;
+}
+.blog-posts__pagination p{
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-posts__pagination p.no-current{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--accent);
+}
 /* footer ============================*/
 .footer {
     background-image: url(../img/bg-footer.jpg);
