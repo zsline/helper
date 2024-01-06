@@ -613,11 +613,10 @@ body.page .header {
 /* about-slider =====================*/
 
 .about-slider {
-    /* height: 100vh; */
+    position: relative;
     margin-top: -80px;
     background-color: var(--blue-slider);
     padding: 20px;
-    position: relative;
     color: var(--white);
 }
 
@@ -689,6 +688,18 @@ body.page .header {
 .about-slider__box--item img{
     width: 40px;
     margin-bottom: 15px;
+}
+
+.about-slider__nav{
+    position: absolute;
+    z-index: 5;
+    bottom: 45%;
+    display: flex;
+    width: 50%;
+}
+.about-slider__count{
+    margin-left: 30%;
+    flex: 1 1;
 }
 
 /* footer ============================*/
