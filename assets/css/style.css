@@ -145,7 +145,7 @@ h1 {
 
 h2 {
     font-size: clamp(35px, 3.8vw, 65px);
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 
 h3 {
@@ -156,18 +156,27 @@ h3 {
 
 h4 {
     font-size: clamp(20px, 1.8vw, 24px);
+    font-weight: 700;
 }
 
 p {
     font-size: clamp(16px, 1.2vw, 20px);
 }
-
+.subtext{
+    font-size: clamp(14px, 1vw, 18px);
+    font-style: italic;
+    opacity: 0.6;
+}
 .container {
     max-width: 1700px;
     padding: 0 10px;
     margin: 0 auto;
 }
-
+.container-single{
+    max-width: 860px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
 .main-btn {
     font-family: 'Casper', sans-serif;
     font-size: 16px;
@@ -404,7 +413,7 @@ body.page .header {
     padding: 50px 30px 30px;
     height: 100%;
 }
-
+h2
 .reason__item img {
     margin-bottom: 30px;
 }
@@ -420,7 +429,8 @@ body.page .header {
 .growth {
     color: var(--white);
     padding: 20px;
-
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .growth__box {
@@ -519,12 +529,13 @@ body.page .header {
     background-image: url(../img/bg-feedback.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
     padding: 20px;
+    color: var(--white);
 }
 
 .feedback__inner {
-    padding: 70px 60px;
+    padding: clamp(35px, 3.8vw, 70px) clamp(35px, 3.8vw, 65px);
 }
 
 .feedback__title p {
@@ -532,27 +543,27 @@ body.page .header {
     margin-top: 40px;
 }
 
-.feedback span,
-.feedback input {
+.feedback__form span,
+.feedback__form input {
     display: inline-block;
     width: 100%;
 }
 
-.feedback input {
+.feedback__form input {
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     margin-bottom: 50px;
 }
 
-.feedback span.half {
+.feedback__form span.half {
     width: 48%;
 }
 
-.feedback span:nth-child(2) {
+.feedback__form span:nth-child(2) {
     float: right;
 }
 
-.feedback span:nth-last-child(1) {
+.feedback__form span:nth-last-child(1) {
     display: inline-block;
     font-size: 16px;
     font-weight: 400;
@@ -824,6 +835,15 @@ body.page .header {
     z-index: 10;
 }
 
+.service-main h3,
+.service-imp h3,
+.service-work h3,
+.services-garant__title
+{
+    position: sticky;
+    top: 20px;
+}
+
 /* Блог =======================================
     ==========================================*/
 
@@ -892,6 +912,95 @@ body.page .header {
     color: var(--accent);
 }
 
+
+/* Contacts ==========================
+    =================================*/
+
+.contact-main{
+    padding: 35px 0 var(--section);
+}
+.contact-main__row{
+    margin-top: 50px;
+}
+.contact-main__col {
+    height: 100%;
+}
+.contact-main__info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-main__item{
+    padding: clamp(35px, 3.8vw, 65px) clamp(15px, 1.9vw, 35px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+.contact-main .how__num--item{
+    padding: 35px;
+}
+.contact-main .how__num--item p{
+    margin-bottom: 0;
+}
+.contact-main .feedback__wrapper{
+    padding: 20px;
+    height: 100%;
+
+}
+.contact-main .feedback__inner{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-main .feedback__wrapper h3{
+    margin-bottom: 10px;
+}
+.contact-main .feedback__inner--title{
+    margin-bottom: 27px;
+}
+
+
+
+/* Single =============================
+    ==================================*/
+.single{
+    padding: 35px 0 var(--section);
+}
+
+.single h2{
+text-align: center;
+margin-bottom: 50px;
+}
+.single img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.single__content{
+    margin-top: 45px;
+}
+.single__content h3{
+    margin-bottom: 20px;
+}
+.single__content h4{
+    margin-bottom: 10px;
+}
+.single__content--item{
+    margin-bottom: 30px;
+}
+.single__content--date{
+    padding-top: 35px;
+    margin-top: 45px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.single-theme{
+    background-color: #F9F9F9;
+    padding: 90px 0;
+}
+.single-theme h3{
+    margin-bottom: 30px;
+}
 /* footer ============================*/
 .footer {
     background-image: url(../img/bg-footer.jpg);
