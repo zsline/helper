@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -75,7 +76,7 @@
                 </div>
             </div>
         </section>
-         <section class="welcome">
+        <section class="welcome">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -83,11 +84,12 @@
                         <p>Мы помогаем бизнесу перейти на новый этап развития! Наш проект создан для предпринимателей,
                             которые хотят вывести компанию на следующий уровень. Мы имеем под рукой широкий спектр
                             инструментов для повышения эффективности вашего бизнеса. </p>
-                            <a href="#" class="main-btn">Подробнее об услугах</a>
+                        <a href="#" class="main-btn">Подробнее об услугах</a>
                     </div>
                 </div>
             </div>
-            <div class="welcome__bg" style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url(assets/img/welcome.jpg);">
+            <div class="welcome__bg"
+                style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url(assets/img/welcome.jpg);">
             </div>
         </section>
         <section class="how">
@@ -107,72 +109,72 @@
                             <div class="col-lg-4 col-6">
                                 <div class="how__num">
                                     <div class="how__num--item">
-                                    <div class="how__num--count">
-                                        1
-                                    </div>
-                                    <div class="how__num--text">
-                                        Ревизия бизнес-процессов
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-6">
-                                <div class="how__num">
-                                    <div class="how__num--item">
-                                    <div class="how__num--count">
-                                        2
-                                    </div>
-                                    <div class="how__num--text">
-                                        Создание структуры
-                                    </div>
+                                        <div class="how__num--count">
+                                            1
+                                        </div>
+                                        <div class="how__num--text">
+                                            Ревизия бизнес-процессов
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="how__num">
                                     <div class="how__num--item">
-                                    <div class="how__num--count">
-                                        3
-                                    </div>
-                                    <div class="how__num--text">
-                                        Формализация функций
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-6">
-                                <div class="how__num">
-                                    <div class="how__num--item">
-                                    <div class="how__num--count">
-                                        4
-                                    </div>
-                                    <div class="how__num--text">
-                                        Расстановка и наем сотрудников
-                                    </div>
+                                        <div class="how__num--count">
+                                            2
+                                        </div>
+                                        <div class="how__num--text">
+                                            Создание структуры
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="how__num">
                                     <div class="how__num--item">
-                                    <div class="how__num--count">
-                                        5
-                                    </div>
-                                    <div class="how__num--text">
-                                        План развития
-                                    </div>
+                                        <div class="how__num--count">
+                                            3
+                                        </div>
+                                        <div class="how__num--text">
+                                            Формализация функций
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-6">
                                 <div class="how__num">
                                     <div class="how__num--item">
-                                    <div class="how__num--count">
-                                        6
+                                        <div class="how__num--count">
+                                            4
+                                        </div>
+                                        <div class="how__num--text">
+                                            Расстановка и наем сотрудников
+                                        </div>
                                     </div>
-                                    <div class="how__num--text">
-                                        Поддержка изменений
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <div class="how__num">
+                                    <div class="how__num--item">
+                                        <div class="how__num--count">
+                                            5
+                                        </div>
+                                        <div class="how__num--text">
+                                            План развития
+                                        </div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <div class="how__num">
+                                    <div class="how__num--item">
+                                        <div class="how__num--count">
+                                            6
+                                        </div>
+                                        <div class="how__num--text">
+                                            Поддержка изменений
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -185,15 +187,21 @@
         <section class="reason">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-sm-6"><h2>Причины <br>обратиться к нам</h2></div>
-                    <div class="col-sm-6"><p>Мы помогаем бизнесу перейти на новый этап развития! Наш проект создан для предпринимателей, которые хотят вывести компанию на следующий уровень. Мы имеем под рукой широкий спектр инструментов для повышения эффективности вашего бизнеса.</p> </div>
+                    <div class="col-sm-6">
+                        <h2>Причины <br>обратиться к нам</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>Мы помогаем бизнесу перейти на новый этап развития! Наш проект создан для предпринимателей,
+                            которые хотят вывести компанию на следующий уровень. Мы имеем под рукой широкий спектр
+                            инструментов для повышения эффективности вашего бизнеса.</p>
+                    </div>
                 </div>
                 <div class="row g-0 reason__wrapper">
                     <div class="col-lg-4 col-sm-6">
                         <div class="reason__item">
                             <img src="assets/img/icons/icon-1.svg" alt="">
                             <div class="reason__item--title">
-                                Вы готовы быть лидером! 
+                                Вы готовы быть лидером!
                             </div>
                             <div class="reason__item--text">
                                 Следите за трендами, бросаете себе вызовы, и хотите быть первыми
@@ -204,7 +212,7 @@
                         <div class="reason__item">
                             <img src="assets/img/icons/icon-2.svg" alt="">
                             <div class="reason__item--title">
-                                Вы замечаете 
+                                Вы замечаете
                             </div>
                             <div class="reason__item--text">
                                 что то, что приносило вам успех раньше, перестало эффективно работать сейчас
@@ -226,7 +234,7 @@
                         <div class="reason__item">
                             <img src="assets/img/icons/icon-4.svg" alt="">
                             <div class="reason__item--title">
-                                Вы готовы быть лидером! 
+                                Вы готовы быть лидером!
                             </div>
                             <div class="reason__item--text">
                                 Следите за трендами, бросаете себе вызовы, и хотите быть первыми
@@ -237,7 +245,7 @@
                         <div class="reason__item">
                             <img src="assets/img/icons/icon-5.svg" alt="">
                             <div class="reason__item--title">
-                                Вы замечаете 
+                                Вы замечаете
                             </div>
                             <div class="reason__item--text">
                                 что то, что приносило вам успех раньше, перестало эффективно работать сейчас
@@ -289,7 +297,8 @@
                                     Увеличить силу
                                 </div>
                                 <div class="growth__item--text">
-                                    компании х2 за счет постановки на эффективный конвейер всех важных бизнес-процессов, включая управление человеческими ресурсами
+                                    компании х2 за счет постановки на эффективный конвейер всех важных бизнес-процессов,
+                                    включая управление человеческими ресурсами
                                 </div>
                             </div>
                         </div>
@@ -313,7 +322,7 @@
                                             на <span>80%</span>
                                         </div>
                                         <div class="solution__item--text">
-                                            возрастает вовлеченность сотрудников 
+                                            возрастает вовлеченность сотрудников
                                         </div>
                                     </div>
                                 </div>
@@ -360,10 +369,55 @@
                         </div>
                     </div>
                 </div>
-                <div class="clients__slider">
-                    <div class="clients__slider--item">
-                        
+                <div class="clients__slider swiper-slider">
+                    <div class="swiper-wrapper">
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/tikurila.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/tele2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/beeline.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/microsoft.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/eurasian.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/tele2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/beeline.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/microsoft.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__slider--item swiper-slide">
+                            <div class="clients__slider--img">
+                                <img src="assets/img/eurasian.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -380,9 +434,198 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial__slider">
+                <div class="testimonial__sliders">
                     <div class="testimonial__slider--item">
+                        <div class="testimonial__slider--video  swiper-slider">
+                            <div class="swiper-wrapper" pagination="true">
 
+                                <!-- Слайд с видео -->
+                                <div class="swiper-slide testimonial__item">
+                                    <div class="testimonial__item--img play-placeholder"
+                                        style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url('assets/img/testy-1.jpg')">
+                                        <div class="play-placeholder__play">
+                                            <img src="assets/img/icons/play.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__item--video hidden">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ax5YFnzhZL0?si=Kqrks52joOIfgCl1&amp;controls=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="testimonial__item--text">
+                                        Отзыв от компании «Рос Сталь»
+                                    </div>
+                                </div>
+                                <!-- End Слайд с видео -->
+                                <!-- Слайд с видео -->
+                                <div class="swiper-slide testimonial__item">
+                                    <div class="testimonial__item--img play-placeholder"
+                                        style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url('assets/img/testy-2.jpg')">
+                                        <div class="play-placeholder__play">
+                                            <img src="assets/img/icons/play.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__item--video hidden">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ax5YFnzhZL0?si=Kqrks52joOIfgCl1&amp;controls=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="testimonial__item--text">
+                                        Отзыв от компании «Рос Сталь»
+                                    </div>
+                                </div>
+                                <!-- End Слайд с видео -->
+                                <!-- Слайд с видео -->
+                                <div class="swiper-slide testimonial__item">
+                                    <div class="testimonial__item--img play-placeholder"
+                                        style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url('assets/img/testy-3.jpg')">
+                                        <div class="play-placeholder__play">
+                                            <img src="assets/img/icons/play.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__item--video hidden">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ax5YFnzhZL0?si=Kqrks52joOIfgCl1&amp;controls=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="testimonial__item--text">
+                                        Отзыв от компании «Рос Сталь»
+                                    </div>
+                                </div>
+                                <!-- End Слайд с видео -->
+                                <!-- Слайд с видео -->
+                                <div class="swiper-slide testimonial__item">
+                                    <div class="testimonial__item--img play-placeholder"
+                                        style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url('assets/img/testy-4.jpg')">
+                                        <div class="play-placeholder__play">
+                                            <img src="assets/img/icons/play.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__item--video hidden">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ax5YFnzhZL0?si=Kqrks52joOIfgCl1&amp;controls=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="testimonial__item--text">
+                                        Отзыв от компании «Рос Сталь»
+                                    </div>
+                                </div>
+                                <!-- End Слайд с видео -->
+                                <!-- Слайд с видео -->
+                                <div class="swiper-slide testimonial__item">
+                                    <div class="testimonial__item--img play-placeholder"
+                                        style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url('assets/img/testy-5.jpg')">
+                                        <div class="play-placeholder__play">
+                                            <img src="assets/img/icons/play.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__item--video hidden">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ax5YFnzhZL0?si=Kqrks52joOIfgCl1&amp;controls=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="testimonial__item--text">
+                                        Отзыв от компании «Рос Сталь»
+                                    </div>
+                                </div>
+                                <!-- End Слайд с видео -->
+                                <!-- Слайд с видео -->
+                                <div class="swiper-slide testimonial__item">
+                                    <div class="testimonial__item--img play-placeholder"
+                                        style="background-image: linear-gradient(0deg, rgba(16, 54, 95, 0.50) 0%, rgba(16, 54, 95, 0.50) 100%), url('assets/img/testy-6.jpg')">
+                                        <div class="play-placeholder__play">
+                                            <img src="assets/img/icons/play.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__item--video hidden">
+                                        <iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/Ax5YFnzhZL0?si=Kqrks52joOIfgCl1&amp;controls=0"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="testimonial__item--text">
+                                        Отзыв от компании «Рос Сталь»
+                                    </div>
+                                </div>
+                                <!-- End Слайд с видео -->
+
+                            </div>
+                        </div>
+                        <div class="testimonial__slider--text swiper-slider">
+                            <div class="swiper-wrapper" pagination="true">
+                                <div class="swiper-slide  testimonial__item--box">
+                                    <div class="testy-box__info">
+                                        <img src="assets/img/1674722412_3.jpeg" alt="">
+                                        <div class="testy-box--name">
+                                            <h4>Светлаков Сергей</h4>
+                                            <span>Глава компании «Рога и копыта»</span>
+                                        </div>
+                                    </div>
+                                    <p>Знаю насколько важны хорошие и объективные отзывы, поэтому постараюсь быть
+                                        объективным. Первое, что хочу сказать крабы просто супер! Ребят вы реально
+                                        молодцы, вкуснее не ел. Разве что, когда был на камчатке. Очень круто. Икра и
+                                        креветки тоже хорошо. Обратите внимание на доставку. Курьер не позвонил заранее,
+                                        в итоге и мы торопились и он нас ждал. Трудно было за час что ли набрать?</p>
+                                    <a href="#" data-open>Читать полностью</a>
+                                </div>
+                                <div class="swiper-slide  testimonial__item--box">
+                                    <div class="testy-box__info">
+                                        <img src="assets/img/1674722412_3.jpeg" alt="">
+                                        <div class="testy-box--name">
+                                            <h4>Светлаков Сергей</h4>
+                                            <span>Глава компании «Рога и копыта»</span>
+                                        </div>
+                                    </div>
+                                    <p>Знаю насколько важны хорошие и объективные отзывы, поэтому постараюсь быть
+                                        объективным. Первое, что хочу сказать крабы просто супер! Ребят вы реально
+                                        молодцы, вкуснее не ел. Разве что, когда был на камчатке. Очень круто. Икра и
+                                        креветки тоже хорошо. Обратите внимание на доставку. Курьер не позвонил заранее,
+                                        в итоге и мы торопились и он нас ждал. Трудно было за час что ли набрать?</p>
+                                    <a href="#" data-open>Читать полностью</a>
+                                </div>
+                                <div class="swiper-slide  testimonial__item--box">
+                                    <div class="testy-box__info">
+                                        <img src="assets/img/1674722412_3.jpeg" alt="">
+                                        <div class="testy-box--name">
+                                            <h4>Светлаков Сергей</h4>
+                                            <span>Глава компании «Рога и копыта»</span>
+                                        </div>
+                                    </div>
+                                    <p>Знаю насколько важны хорошие и объективные отзывы, поэтому постараюсь быть
+                                        объективным. Первое, что хочу сказать крабы просто супер! Ребят вы реально
+                                        молодцы, вкуснее не ел. Разве что, когда был на камчатке. Очень круто. Икра и
+                                        креветки тоже хорошо. Обратите внимание на доставку. Курьер не позвонил заранее,
+                                        в итоге и мы торопились и он нас ждал. Трудно было за час что ли набрать? </p>
+                                    <a href="#" data-open>Читать полностью</a>
+                                </div>
+                                <div class="swiper-slide  testimonial__item--box">
+                                    <div class="testy-box__info">
+                                        <img src="assets/img/1674722412_3.jpeg" alt="">
+                                        <div class="testy-box--name">
+                                            <h4>Светлаков Сергей</h4>
+                                            <span>Глава компании «Рога и копыта»</span>
+                                        </div>
+                                    </div>
+                                    <p>Знаю насколько важны хорошие и объективные отзывы, поэтому постараюсь быть
+                                        объективным. Первое, что хочу сказать крабы просто супер! Ребят вы реально
+                                        молодцы, вкуснее не ел. Разве что, когда был на камчатке. Очень круто. Икра и
+                                        креветки тоже хорошо. Обратите внимание на доставку. Курьер не позвонил заранее,
+                                        в итоге и мы торопились и он нас ждал. Трудно было за час что ли набрать? </p>
+                                    <a href="#"  data-open>Читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -433,8 +676,10 @@
                                         <span>
                                             <input type="textarea" placeholder="Комментарий">
                                         </span><br>
-                                        <p><input type="submit"  class="main-btn" value="Отправить">
-                                        <span>Нажимая кнопку «Отправить» вы принимаете политику конфендициальности и соглашаетесь с обработкой ваших персональных данных</span></p>
+                                        <p><input type="submit" class="main-btn" value="Отправить">
+                                            <span>Нажимая кнопку «Отправить» вы принимаете политику конфендициальности и
+                                                соглашаетесь с обработкой ваших персональных данных</span>
+                                        </p>
 
                                     </form>
                                 </div>
@@ -454,26 +699,26 @@
                         <p>Проект «Система». Мы помогаем бизнесу перейти на новый уровень.
                             Мы продаем не продукт, мы продаем развитие бизнеса!</p>
                     </div>
-                        <div class="footer__menu">
-                            <ul>
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">Блог</a></li>
-                                <li><a href="#">Контакты</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__social">
-                            <ul>
-                                <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
-                            </ul>
-                        </div>
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__social">
+                        <ul>
+                            <li><a href="#"><img src="assets/img/icons/linkedin.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/icons/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/icons/instagram.svg" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer__address">
                     <div class="footer__address--text">
-                        г. Алматы, ул. Байзакова 280, Smart Point
+                        <p>г. Алматы, ул. Байзакова 280, Smart Point</p>
                     </div>
                     <div class="footer__address--mail">
                         <a href="mailto:smart-sales.kz@mail.ru">smart-sales.kz@mail.ru</a>
@@ -496,6 +741,32 @@
             </div>
         </div>
     </footer>
+    <div class="modal-box hidden">
+        <div class="modal__wrapper">
+            <svg class="close" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.08398 1.08337L21.9173 21.9167M1.08398 21.9167L21.9173 1.08337" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="testy-box__info">
+                <img src="assets/img/1674722412_3.jpeg" alt="">
+                <div class="testy-box--name">
+                    <h4>Светлаков Сергей</h4>
+                    <span>Глава компании «Рога и копыта»</span>
+                </div>
+            </div>
+            <p>
+                Знаю насколько важны хорошие и объективные отзывы, поэтому постараюсь быть объективным. Первое, что хочу
+                сказать крабы просто супер! Ребят вы реально молодцы, вкуснее не ел. Разве что, когда был на камчатке.
+                Очень круто. Икра и креветки тоже хорошо. Обратите внимание на доставку. Курьер не позвонил заранее, в
+                итоге и мы торопились и он нас ждал. Трудно было за час что ли набрать? Это единственный косяк. Знаю
+                насколько важны хорошие и объективные отзывы, поэтому постараюсь быть объективным. Первое, что хочу
+                сказать крабы просто супер! Ребят вы реально молодцы, вкуснее не ел. Разве что, когда был на камчатке.
+                Очень круто. Икра и креветки тоже хорошо. Обратите внимание на доставку. Курьер не позвонил заранее, в
+                итоге и мы торопились и он нас ждал. Трудно было за час что ли набрать? Это единственный косяк.
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
